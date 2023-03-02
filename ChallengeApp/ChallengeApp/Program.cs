@@ -1,13 +1,12 @@
-﻿string myName = "Marek";
-var myAge = 13;
-bool mezczyzna = true;
+﻿string myName = "Ewa";
+var myAge = 33;
+bool mezczyzna = false;
 
-
-if (myAge > 18 && mezczyzna == true)
-    Console.WriteLine("Facet jest stary dziad");
-
-if (myAge < 18 && mezczyzna == true)
-    Console.WriteLine("Niepelnoletni mezczyzna");
-
-if (myName == "Marek" && myAge == 33)
-    Console.WriteLine("Marek to 33 latek");
+if (mezczyzna == false)
+    if (myAge < 30 && myName == "Ewa")
+        Console.WriteLine("Mloda kobieta");
+    else if (myName == "Ewa" && myAge == 33)
+        Console.WriteLine("Ewa ma 33 lat");
+if (mezczyzna == true)
+    if (myAge < 18)
+        Console.WriteLine("Nieletni mezczyzna");
